@@ -13,8 +13,6 @@ type CategoriesProps = {
 }
 
 export function Categories({ data, selected, onSelect }: CategoriesProps) {
-  console.log(data);
-
   return (
     <FlatList 
       data={data}

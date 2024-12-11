@@ -1,4 +1,5 @@
 import { StatusBar } from "react-native"
+import { GestureHandlerRootView } from "react-native-gesture-handler"
 import { Stack } from "expo-router"
 import {
   useFonts,
@@ -25,7 +26,7 @@ export default function Layout() {
   }
 
   return (
-    <>
+    <GestureHandlerRootView style={{ flex: 1 }}>
       <Stack 
         screenOptions={{
           headerShown: false,
@@ -40,6 +41,6 @@ export default function Layout() {
         backgroundColor={colors.gray[100]}
         translucent
       />
-    </>
+    </GestureHandlerRootView>
   )
 }
