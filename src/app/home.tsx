@@ -50,7 +50,7 @@ export default function Home() {
   }, [category])
 
   return (
-    <View style={{ flex: 1, backgroundColor: "#CECECE" }}>
+    <View style={{ flex: 1 }}>
       <Categories 
         data={categories} 
         onSelect={setCategory}
