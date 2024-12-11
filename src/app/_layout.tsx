@@ -1,3 +1,4 @@
+import { StatusBar } from "react-native"
 import { Stack } from "expo-router"
 import {
   useFonts,
@@ -24,13 +25,21 @@ export default function Layout() {
   }
 
   return (
-    <Stack 
-      screenOptions={{
-        headerShown: false,
-        contentStyle: {
-          backgroundColor: colors.gray[100]
-        }
-      }}
-    />
+    <>
+      <Stack 
+        screenOptions={{
+          headerShown: false,
+          contentStyle: {
+            backgroundColor: colors.gray[100]
+          }
+        }}
+      />
+      
+      <StatusBar
+        barStyle="dark-content"
+        backgroundColor={colors.gray[100]}
+        translucent
+      />
+    </>
   )
 }
